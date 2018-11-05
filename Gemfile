@@ -19,7 +19,7 @@ gem 'will_paginate', '3.0.7' #for pagination
 gem 'bootstrap-will_paginate', '0.0.10' #for pagination
 gem 'browser'#to be viewed well in the browser
 gem 'pg_search'
-gem 'concurrent-ruby', '~> 1.0', '>= 1.0.5'
+#gem 'concurrent-ruby', '~> 1.0', '>= 1.0.5'
 gem 'concurrent-ruby', '~> 1.1.0.pre2'
 # group :assets do
 #   gem 'therubyracer'
