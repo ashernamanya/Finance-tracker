@@ -11,7 +11,7 @@ default: &default
 
 development:
   <<: *default
-  adapter: sqlite3
+  adapter: postgresql
   host: localhost
   database: finance-tracker
   username: asher
