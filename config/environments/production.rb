@@ -19,6 +19,7 @@ Rails.application.configure do
   # For large-scale production use, consider using a caching reverse proxy like
   # NGINX, varnish or squid.
   # config.action_dispatch.rack_cache = true
+  config.serve_static_assets = false 
 
   # Disable serving static files from the `/public` folder by default since
   # Apache or NGINX already handles this.
@@ -47,7 +48,9 @@ Rails.application.configure do
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
   config.log_level = :debug
-
+   
+#config.logger = Logger.new(STDOUT)
+#config.logger.level = Logger::DEBUG
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
 
@@ -73,6 +76,7 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
