@@ -48,10 +48,10 @@
         <a class="navbar-brand" href="#">Finance Stock Tracker</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
-            <li><%= link_to "My Portifolio", "my_portfolio"  %></li>
+            <li><%= link_to "My Portifolio", 'my_portfolio_path'  %></li>
             <li><%= link_to "Link2", "/path2"  %></li>
             <li><%= link_to "Link3", "/path3"  %></li>
-            <li><%= link_to "logout", destroy_user_session_path, method: :delete %></li>
+            <%#= link_to "logout", destroy_user_session_path, method: :delete %>
         </div>
       </div>
     </div>
