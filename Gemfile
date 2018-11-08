@@ -8,7 +8,8 @@ gem 'twitter-bootstrap-rails'
 
 # Use sqlite3 as the database for Active Record
 gem 'devise-bootstrap-views'
-gem 'stock_quote'
+gem "stock_quote", '~> 2.0.0'
+
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.5.0' # declaring ruby version
 #ruby 'RUBY_VERSION', :engine => 'ENGINE', :engine_version => 'ENGINE_VERSION',
   #:patchlevel => 'RUBY_PATCHLEVEL'

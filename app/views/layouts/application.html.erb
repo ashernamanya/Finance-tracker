@@ -38,35 +38,12 @@
   </head>
   <body>
 
-    <div class="navbar navbar-default navbar-static-top">
-      <div class="container">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Finance Stock Tracker</a>
-        <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "My Portifolio", 'my_portfolio_path'  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
-            <%#= link_to "logout", destroy_user_session_path, method: :delete %>
-        </div>
-      </div>
-    </div>
-<%#= link_to "logout", destroy_user_session_path, method: :delete %>
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-9">
-          <%= bootstrap_flash %>
-          <%= yield %>
-        </div>
-        
-      </div><!--/row-->
+    <%= render 'layouts/navigation' %>
+
 
       <footer>
         <p>&copy; Finance Trust Stock Tracker Company 2018</p>
+        <p>&copy; Ruby on Rails</p>
       </footer>
 
     </div> <!-- /container -->
