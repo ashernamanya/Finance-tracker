@@ -8,13 +8,13 @@ gem 'twitter-bootstrap-rails'
 
 # Use sqlite3 as the database for Active Record
 gem 'devise-bootstrap-views'
-gem "stock_quote", '~> 2.0.0'
+gem "stock_quote"
 
 ruby ENV['CUSTOM_RUBY_VERSION'] || '2.5.0' # declaring ruby version
 #ruby 'RUBY_VERSION', :engine => 'ENGINE', :engine_version => 'ENGINE_VERSION',
   #:patchlevel => 'RUBY_PATCHLEVEL'
 # Use SCSS for stylesheets
-gem 'commontator', '~> 4.11.1' #add comments to the articles
+#gem 'commontator', '~> 4.11.1' #add comments to the articles
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,6 +26,7 @@ gem 'bootstrap-will_paginate', '0.0.10' #for pagination
 gem 'browser'#to be viewed well in the browser
 gem 'pg_search'
 gem 'concurrent-ruby', '~> 1.0', '>= 1.1.0'
+gem 'rails_admin'
 #gem 'concurrent-ruby', '~> 1.1.0
 # group :assets do
 #   gem 'therubyracer'
