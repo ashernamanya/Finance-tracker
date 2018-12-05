@@ -282,7 +282,6 @@ DEPENDENCIES
   byebug
   capistrano-rails
   coffee-rails (~> 4.1.0)
-  commontator (~> 4.11.1)
   concurrent-ruby (~> 1.0, >= 1.1.0)
   devise
   devise-bootstrap-views
