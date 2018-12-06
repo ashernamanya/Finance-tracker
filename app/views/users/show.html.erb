@@ -1,10 +1,13 @@
-<h2>User Details</h2> 
-
-<dl class="dl-horizontal"> 
-  <dt><strong>Full Name</strong></dt> 
+<h4>User Details</h4> 
+<div id="friend-lookup-results" class="well results-block col-md-8">
+  <table class="search-results-table col-md-10">
+  <tbody>
+ <dt><strong>Full Name</strong></dt> 
   <dd><%= @user.full_name %></dd> 
    <dt><strong>Country</strong></dt> 
   <dd><%= @user.country %></dd> 
+  <dt><strong>Date of Birth</strong></dt> 
+  <dd><%= @user.birthdate %></dd> 
   <dt><strong>Email</strong></dt> 
   <dd><%= @user.email %></dd> 
 </dl> 

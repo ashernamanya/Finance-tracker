@@ -1,9 +1,11 @@
 <div id="friend-lookup">
-  <h3>Search for friends</h3>
+  <h3>Look for friends</h3>
   <%= form_tag search_friends_path, remote: true, method: :get, id: 'friend-lookup-form' do %>
   <div class="form-group row no-padding text-center col-md-12">
     <div class="col-md-10">
-      <%= text_field_tag :search_param, params[:search_param], placeholder: "first name, last name or email", autofocus: true, class: 'form-control search-box input-lg' %>
+      <%= text_field_tag :search_param, params[:search_param], 
+                                  placeholder: "first name, last name or email", autofocus: true,
+                                  class: 'form-control search-box input-lg' %>
     </div>
     <div class="col-md-2">
       <%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
@@ -11,7 +13,7 @@
       <% end %>
     </div>
   </div>
-  <% end %>
+  <% end %><p> Note: Refresh your browser if you fail to search and try and again</p>
   <%= render 'common/spinner' %>
   <% if @users %>
     <% if @users.size > 0 %>
