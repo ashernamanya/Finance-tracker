@@ -91,6 +91,7 @@ GEM
       railties (>= 3.2, < 6.0)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    gravtastic (3.2.6)
     haml (5.0.4)
       temple (>= 0.8.0)
       tilt
@@ -285,6 +286,7 @@ DEPENDENCIES
   concurrent-ruby (~> 1.0, >= 1.1.0)
   devise
   devise-bootstrap-views
+  gravtastic
   jbuilder (~> 2.0)
   jquery-rails
   pg (~> 0.11)
