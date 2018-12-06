@@ -3,13 +3,11 @@
   <%= form_tag search_friends_path, remote: true, method: :get, id: 'friend-lookup-form' do %>
   <div class="form-group row no-padding text-center col-md-12">
     <div class="col-md-10">
-      <%= text_field_tag :search_param, params[:search_param], 
-                                  placeholder: "first name, last name or email", autofocus: true,
-                                  class: 'form-control search-box input-lg' %>
+      <%= text_field_tag :search_param, params[:search_param], placeholder: "first name, last name or email", autofocus: true, class: 'form-control search-box input-lg' %>
     </div>
     <div class="col-md-2">
       <%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
-        <i class="fa fa-search"></i> Look up a friend
+        <i class="fa fa-search"></i> Look for a friend
       <% end %>
     </div>
   </div>
@@ -27,7 +25,7 @@
               <td><strong>Profile:</strong> <%= link_to "View Profile", user_path(user),
                                                         class: "btn btn-xs btn-success" %>
                 <% if current_user.not_friends_with?(user.id) %>
-                  <%= link_to "Add as my friend", friendships_path(user: current_user, friend: user),
+                  <%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
                                                     class: "btn btn-xs btn-success", method: :post %>
                 <% else %>
                   <span class="label label-primary">
