@@ -11,7 +11,9 @@
 
     <!-- Bootstrap core CSS -->
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
+ <% content_for(:body_attributes) do %>
+    data-no-turbolink="true"
+  <% end %>
     <!-- Custom styles for this template -->
     <link href="dashboard.css" rel="stylesheet">
   </head>
