@@ -53,7 +53,9 @@ Rails.application.configure do
 #config.logger.level = Logger::DEBUG
   # Prepend all log lines with the following tags.
   # config.log_tags = [ :subdomain, :uuid ]
+config.action_mailer.delivery_method = :smtp
 
+config.action_mailer.default_url_options = { :host => 'wicked-caverns-79970.herokuapp.com', :protocol => 'https'}
   # Use a different logger for distributed setups.
   # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 

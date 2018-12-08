@@ -8,8 +8,25 @@
     <link rel="icon" href="../../../../favicon.ico">
 
     <title> My Collections Dashboard </title>
-
+<style>
+  
+  .button{
+  background-color:;
+  border: none;
+  color: red;
+  padding: 60px 380px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 8px 10px;
+  cursor: pointer;
+  margin-left:120px;
+  </style>
     <!-- Bootstrap core CSS -->
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
     <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
  <% content_for(:body_attributes) do %>
     data-no-turbolink="true"
@@ -33,30 +50,25 @@
               <li class="nav-item">
                 <class="nav"></class>
                   <span data-feather="file"></span>
-                 
                 
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="shopping-cart"></span>
-                  Products
+                 <h4> My Wedding </h4>
                 </a>
               </li>
-              <li class="nav-item">
-                <li class="nav-link"><%= link_to "My Profile", edit_registration_path(current_user) %><span data-feather="users"></span>
-                 
-                </a>
-              </li>
+              
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="bar-chart-2"></span>
-                  Reports
+                 <h4> My Birthday</h4>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="layers"></span>
-                  Integrations
+                 <h4> My Baby Shower</h4>
                 </a>
               </li>
             </ul>
@@ -64,39 +76,40 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
-                  Current month
+                 <h4> My Health Condition</h4>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
-                  Last quarter
+                  My Bridal Shower
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
-                  Social engagement
+                  Sacco Contributions
                 </a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">
                   <span data-feather="file-text"></span>
-                  Year-end sale
+                  Charity Contributions
                 </a>
               </li>
             </ul>
           </div>
         </nav>
+<body>
+<p align="left"><input type="button" class="button" value="UserID"></p>
+<p align="left"><input type="button" class="button" value="Userlink"></p>
+</br>
+</br>
+<p align="left"><input type="button" class="button" value="AMOUNT"> </p>
 
-        <h3 align="center"><main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            
-            <div class="btn-toolbar mb-2 mb-md-0">
-              <div class="btn-group mr-2">
-            </div>
-          </div>
+</br>
+</br>
 
-          
+
   </body>
 </html>

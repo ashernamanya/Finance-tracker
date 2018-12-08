@@ -9,7 +9,7 @@
     </div>
     <div class="col-md-2">
       <%= button_tag(type: :submit, class: "btn btn-lg btn-success") do %>
-        <i class="fa fa-search"></i> Look for a friend
+        <i class="fa fa-search"></i>search
       <% end %>
     </div>
   </div>
@@ -27,10 +27,9 @@
               <td><strong>Profile:</strong> <%= link_to "View Profile", user_path(user),
                                                         class: "btn btn-xs btn-success" %>
                 <% if current_user.not_friends_with?(user.id) %>
-                <div data-turbolinks="false">
-  <%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
+                 <%= link_to "Add as my friend", add_friend_path(user: current_user, friend: user),
                                                     class: "btn btn-xs btn-success", method: :post %>
-                    </div>
+                   
                   
                 <% else %>
                   <span class="label label-primary">
