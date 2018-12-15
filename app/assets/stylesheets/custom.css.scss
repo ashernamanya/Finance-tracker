@@ -1,0 +1,72 @@
+.jumbotron {
+
+background-image:asset-url('celebrate2.jpg'); 
+background-size:cover;
+height:570px;
+
+}
+
+.jumbotron h1 {
+
+color:red;
+
+text-align:center;
+
+margin-bottom:30px;
+
+letter-spacing:-1px;
+
+font-weight:bold;
+
+}
+
+.jumbotron h3{
+    color: #fff;
+}
+.btn-xlarge {
+
+font-size:1.7em;
+
+background-color:black;
+
+}
+
+footer {
+
+margin-top:50px;
+
+padding-top:5px;
+
+border-top:1pxsolid#eaeaea;
+
+color:blue;
+
+}
+
+footer a:hover {
+
+color:transparent;
+
+}
+
+footer small {
+
+float:left;
+
+}
+
+footer ul {
+
+float:right;
+
+list-style:none;
+
+}
+
+footer ul li {
+
+float:left;
+
+margin-left:40px;
+
+}

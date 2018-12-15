@@ -1,5 +1,6 @@
 class User::RegistrationsController < Devise::RegistrationsController
   before_action :configure_permitted_parameters
+  redirect_to welcome_path
   
   protected
   

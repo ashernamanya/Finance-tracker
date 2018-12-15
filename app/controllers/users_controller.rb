@@ -34,3 +34,11 @@ def my_portfolio
     @user_stocks = @user.stocks
   end
 end
+
+private
+  def generate_token
+    loop do
+      token = SecureRandom.hex(10)
+      break token unless User.where(access_token: token).exists?
+    end
+  end
