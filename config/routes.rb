@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   #devise_for :users, :controllers => { :registrations => "user/registrations" }
+  devise_for :installs
   
   
   # The priority is based upon order of creation: first created -> highest priority.
@@ -9,10 +10,9 @@ Rails.application.routes.draw do
 
   # You can have the root of your site routed with "root"
    
-   root 'pages#index'
-   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
-   devise_for :installs
+   root 'pages#home'
    get 'welcome', to: 'welcome#index'
+   devise_for :users, path: '', path_names: { sign_in: 'login', sign_out: 'logout'}
    get 'my_portfolio', to: 'users#my_portfolio'
    get 'search_stocks', to: "stocks#search"
    get 'my_friends', to: 'users#my_friends'
